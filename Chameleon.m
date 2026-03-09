@@ -15,7 +15,7 @@ partCluster = cell(npart, 1);
 %% Set up weight (distance) matrix
 dist = pdist2(points, points, "euclidean");
 dist = dist - diag(diag(dist));
-tempWeight =exp(-dist.^2);
+tempWeight = exp(-dist.^2);
 
 %% Connect the nearest k node
 [~,index] = sort(tempWeight,2,'descend');
