@@ -8,7 +8,6 @@ The helper functions and core logic in this repository are adapted from the work
 * `calculRI.m`: Computes the Relative Interconnectivity between two clusters.
 * `calculRC.m`: Computes the Relative Closeness between two clusters.
 * `Fowlkes_Mallows_index.m`: An external cluster validity index introduced by [2] to evaluate cluster assignments between generated clusters and ground truth clusters.
-* `sample.m`: A demonstration script that loads data, runs the algorithm, and plots the results.
 
 ## Usage
 To run the clustering on your own dataset, you can follow the structure provided in `sample.m`:
