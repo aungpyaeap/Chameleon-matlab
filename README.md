@@ -15,7 +15,7 @@ To run the clustering on your own dataset, you can follow the structure provided
 
 ```matlab
 % Load your data points
-load('aggregation.mat'); % Should contain 'points' and 'labels'
+load('aggregation.mat');
 
 % Run Chameleon Clustering
 [clusters, K] = Chameleon(points);
