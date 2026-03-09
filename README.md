@@ -9,26 +9,6 @@ The helper functions and core logic in this repository are adapted from the work
 * `calculRC.m`: Computes the Relative Closeness between two clusters.
 * `Fowlkes_Mallows_index.m`: An external cluster validity index introduced by [2] to evaluate cluster assignments between generated clusters and ground truth clusters.
 
-## Usage
-To run the clustering on your own dataset, you can follow the structure provided in `sample.m`:
-
-```matlab
-% Load your data points
-load('aggregation.mat');
-
-% Run Chameleon Clustering
-[clusters, K] = Chameleon(points);
-
-% Evaluate clustering quality using Fowlkes-Mallows Index
-fmi_score = Fowlkes_Mallows_index(clusters, labels);
-fprintf('FMI score: %.4f\n', fmi_score);
-
-% Visualize results
-figure;
-gscatter(points(:,1), points(:,2), clusters);
-title(['Chameleon Clustering Result (K=' num2str(K) ')']);
-```
-
 ## Reference
 [1] G. Karypis, Eui-Hong Han, and V. Kumar, "Chameleon: hierarchical clustering using dynamic modeling," *Computer*, vol. 32, no. 8, pp. 68-75, Aug. 1999. doi: [10.1109/2.781637](https://ieeexplore.ieee.org/abstract/document/781637).
 
