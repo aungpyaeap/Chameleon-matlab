@@ -12,7 +12,7 @@ The helper functions and core logic in this repository are adapted from the work
 * `calculEC.m`: Calculates the Internal Interconnectivity (Edge Cut) of a cluster.
 * `calculRI.m`: Computes the Relative Interconnectivity between two clusters.
 * `calculRC.m`: Computes the Relative Closeness between two clusters.
-* `Fowlkes_Mallows_index.m`: An evaluation metric to compare the clustering result against ground truth labels.
+* `Fowlkes_Mallows_index.m`: An external cluster validity index to compare the clustering result against ground truth labels.
 * `sample.m`: A demonstration script that loads data, runs the algorithm, and plots the results.
 
 ## Usage
