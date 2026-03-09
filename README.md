@@ -1,11 +1,6 @@
 # Chameleon Hierarchical Clustering in MATLAB
 This repository contains a MATLAB implementation of the **Chameleon** clustering algorithm by [1].
 
-## Algorithm Steps
-1.  **K-Nearest Neighbor Graph**: Represents the data points as a graph where edges exist between a point and its $k$ most similar neighbors.
-2.  **Graph Partitioning**: Partitions the $k$-NN graph into many small sub-clusters (initial seeds) using spectral clustering.
-3.  **Agglomerative Hierarchical Merging**: Repeatedly merges sub-clusters that share high **Relative Interconnectivity (RI)** and **Relative Closeness (RC)**.
-
 ## Files in this Repository
 The helper functions and core logic in this repository are adapted from the work of [Kchu/Chameleon-cluster-matlab](https://github.com/Kchu/Chameleon-cluster-matlab).
 * `Chameleon.m`: The main entry point for the clustering algorithm.
